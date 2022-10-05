@@ -1,0 +1,50 @@
+tr,th{
+    border: 2px solid black;
+    width: 20px;
+    height: 20px;
+
+}
+
+.A > th:nth-child(odd){
+    background-color: black;
+}
+.C > th:nth-child(odd){
+    background-color: black;
+}
+.G > th:nth-child(odd){
+    background-color: black;
+}
+.E > th:nth-child(odd){
+    background-color: black;
+}
+.B > th:nth-child(even){
+    background-color: black;
+}
+.D > th:nth-child(even){
+    background-color: black;
+}
+.F > th:nth-child(even){
+    background-color: black;
+}
+.H > th:nth-child(even){
+    background-color: black;
+}
+
+
+.A > th:nth-child(1){
+    background-color: white;
+}
+.C > th:nth-child(1){
+    background-color: white;
+}
+.E > th:nth-child(1){
+    background-color: white;
+}
+.G > th:nth-child(1){
+    background-color: white;
+}
+
+.empty > th{
+    background-color: white;
+}
+
