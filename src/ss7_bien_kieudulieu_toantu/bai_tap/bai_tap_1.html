@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chương trình nhập điểm</title>
+</head>
+<body>
+<script>
+    let diemphysics;
+    let diemchemistry;
+    let diembiologi;
+    nhapDiemphysics();
+    function nhapDiemphysics() {
+         diemphysics = parseInt(prompt('physics'));
+        alert("diem physics vua nhap la:" + diemphysics)
+    }
+
+    nhapdiemchemistry();
+    function nhapdiemchemistry() {
+         diemchemistry = parseInt(prompt('chemistry'));
+        alert('diem chemistry vua nhap la:' + diemchemistry)
+    }
+
+    nhapdiembiologi();
+    function nhapdiembiologi() {
+         diembiologi = parseInt(prompt('biologi'));
+        alert('diem chemistry vua nhap la:' + diembiologi)
+    }
+    tinhtongdiem();
+    function tinhtongdiem() {
+        let tongdiem = diemphysics + diemchemistry + diembiologi;
+        alert(tongdiem)
+    }
+    tinhdiemtrungbinh();
+    function tinhdiemtrungbinh() {
+        let diemtrungbinh = (diemphysics + diemchemistry + diembiologi)/3;
+        alert(diemtrungbinh)
+    }
+
+</script>
+</body>
+</html>
