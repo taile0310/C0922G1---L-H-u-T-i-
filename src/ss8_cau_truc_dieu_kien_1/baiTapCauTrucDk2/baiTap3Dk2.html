@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Diện tích hinh vuông</title>
+</head>
+<body>
+<input type="number" id="a">
+<button type="button" onclick="dienTich()">Tính diện tích</button>
+<p id="ketQua"></p>
+<script>
+    let s;
+    function dienTich() {
+        let canh = document.getElementById("a").value;
+        s= canh * canh
+        document.getElementById("ketQua").innerText= "S hình vuông là:" +s;
+    }
+
+
+
+
+</script>
+</body>
+</html>
