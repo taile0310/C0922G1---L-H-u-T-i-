@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Giải phương trình bậc 2 </title>
+</head>
+<body>
+<input type="number" id="bienA">
+<input type="number" id="bienB">
+<input type="number" id="bienC">
+<button type="button" onclick="bienD()">Nghiệm của phương trình</button>
+<p id="ketQua"></p>
+</body>
+<script>
+    let d;
+    function bienD() {
+        let a =document.getElementById("bienA").value;
+        let b =document.getElementById("bienB").value;
+        let c =document.getElementById("bienC").value;
+         d = b*b-(4*a*c);
+        let f= Math.sqrt(d);
+         document.getElementById("ketQua").innerText = "delta là " +d``
+        if (d < 0) {
+            document.getElementById("ketQua").innerText = "Pt vô nghiệm"
+        } else if (d == 0) {
+            x1 = x2 = -(b / 2 * a)
+            document.getElementById("ketQua").innerText = "pT có nghiệm kép là: x1=x2" + x1
+        } else if (d > 0) {
+            x1 = (-b + f) / (2 * a);
+            x2 = (-b - f) / (2 * a);
+            document.getElementById("ketQua").innerText = "Pt có nghiệm là: x1=" + x1 + "và x2=" + x2;
+        }
+    }
+
+
+</script>
+</html>
