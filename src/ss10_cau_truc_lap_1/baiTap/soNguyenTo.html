@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Số nguyên tố </title>
+</head>
+<body>
+<script>
+    function kiemTraNT(num) {
+        let i;
+        i=2;
+        do {
+            if (num%i==0){
+                return false;
+
+            }
+            i++;
+        }while (i < num);
+        return true;
+    }
+    function inRa(num) {
+        let dem;
+        dem = 0;
+        document.write(1+"<br>");
+        document.write(2+"<br>");
+            for(let i=3;i<1000;i++) {
+
+                if (kiemTraNT(i)==true){
+                    document.write(i+"<br>");dem++;
+                }
+                if (dem > num - 2){
+                    break;
+                }
+            }
+    }
+    let a;
+    a = prompt("nhap vao");
+    inRa(a);
+
+
+</script>
+</body>
+</html>
