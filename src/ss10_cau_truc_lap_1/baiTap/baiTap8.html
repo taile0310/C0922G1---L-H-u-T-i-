@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game đoán số </title>
+</head>
+<body>
+<h1>Game đoán số</h1>
+<button type="button" onclick="play()">Đoán số</button>
+<script>
+    function play() {
+        let randomNum = parseInt(prompt("Nhập vào khoảng random"));
+        let randomPick = parseInt(Math.random() * randomNum);
+        let value = parseInt(prompt("Nhập vào giá trị bạn muốn đoán"));
+        let count = 0;
+    while (randomPick !== value) {
+        count++;
+        if (count === 3) {
+            alert("bạn hết lượt đoán");
+            break;
+        } else if (randomPick > value) {
+            alert("Vui lòng nhập số lớn hơn");
+        } else if (randomPick < value) {
+            alert("Vui lòng nhập số nhỏ hơn");
+        }
+        value = parseInt(prompt("Nhập lái số bạn muốn đoán"));
+    }
+    while (randomPick === value) {
+        alert("Bạn đã nhập đúng");
+        break;
+    }
+    }
+    document.write(randomPick);
+
+</script>
+</body>
+</html>
