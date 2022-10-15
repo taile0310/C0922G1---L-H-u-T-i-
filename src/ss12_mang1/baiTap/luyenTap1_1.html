@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính số nguyên</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let dem=0;
+    function f() {
+
+        for (let i=0;i<10;i++){
+            a.push(parseInt(prompt("nhapVao")));
+        }
+
+        for(let i=0;i<a.length;i++){
+            if(a[i]>=10){
+                dem ++;
+            }
+        }
+        document.write(dem);
+    }
+    f();
+
+
+</script>
+</body>
+</html>

@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển chữ thường thành chữ hoa</title>
+</head>
+<body>
+<script>
+    let a = "The Quick Brown Fox";
+
+    function chuoi() {
+
+        for (let i = 0; i < a.length; i++) {
+            //charAt: kí tự tại 1 vị trí nhất định
+            if (a.charAt(i) == a.charAt(i).toUpperCase()) {
+                document.write(a.charAt(i).toLowerCase());
+            }
+            else {
+                document.write(a.charAt(i).toUpperCase());
+            }
+        }
+    }
+    chuoi();
+
+</script>
+</body>
+</html>

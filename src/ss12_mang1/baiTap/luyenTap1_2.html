@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số lớn nhất </title>
+</head>
+<body>
+<script>
+    let a=[1,2,6,77,4,9,8,5,3,10];
+    let max=a[0];
+    let b=0;
+    function giaTri() {
+        for (let i=0;i<a.length;i++){
+            if (max<a[i]){
+                max=a[i];
+                b = i;
+            }
+        }
+        document.write(max+"__"+b);
+    }
+    giaTri();
+
+</script>
+</body>
+</html>

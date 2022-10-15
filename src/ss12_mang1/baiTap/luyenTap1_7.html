@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra chương trìn mảng</title>
+</head>
+<body>
+<script>
+    let a = [];
+    let b = prompt("nhapVao");
+    for (i = 0; i < 10; i++) {
+        a[i] = prompt("nhapVaoPhanTu");
+        if (a[i] === b) {
+            a.splice(i, 1);
+            a.push(0);
+        }
+    }
+    document.writeln(a);
+</script>
+</body>
+</html>

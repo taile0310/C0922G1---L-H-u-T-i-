@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra số nguyên</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhapChuoi");
+    let b = prompt("soCanTimTrongChuoi");
+    let c = 0;
+    for (i = 0; i < a.length; i++) {
+        if (a[i] === b) {
+            c++;
+        }
+    }
+
+    if (c > 0) {
+        document.write(b + " : " + "is  in the array");
+    } else
+        document.write(b + " : " + "is not in the array");
+</script>
+</body>
+</html>

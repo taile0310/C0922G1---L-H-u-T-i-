@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Thênm dâu "-" vào giữa số chẵn</title>
+</head>
+<body>
+<script>
+    let A=['0','2','5','4','6','8'];
+    let B=[A[0]];
+    let C=A.length;
+    function chuoiB() {
+        for(let i=0;i<C-1;i++){
+            if(A[i]%2===0&&A[i+1]%2===0){
+                B.push('-',A[i+1]);
+            }else {
+                B.push(A[i+1]);
+            }
+        }
+        for (let i=0;i<B.length;i++){
+            document.write(B[i]);
+        }
+    }
+    chuoiB();
+
+
+</script>
+
+</body>
+</html>
