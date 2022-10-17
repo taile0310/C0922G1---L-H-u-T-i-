@@ -6,13 +6,29 @@
 </head>
 <body>
 <script>
-    function b(num) {
-        while (num === 0){
-            return 1;
-        }
-        return num * b(num-1);
+    let giaiThua = parseInt(prompt("nhapVao"));
+    let result = 1;
+    for (let i=1;i<=giaiThua;i++){
+        result *= i;
     }
-    document.write(b(4));
+    document.write(result);
+
+
+
+
+
+
+
+
+    // function b(num) {
+    //     while (num === 0){
+    //         return 1;
+    //     }
+    //     return num * b(num-1);
+    // }
+    // document.write(b(4));
+    //
+
 </script>
 </body>
 </html>

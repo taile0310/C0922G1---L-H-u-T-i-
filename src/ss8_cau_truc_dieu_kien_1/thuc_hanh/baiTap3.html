@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Máy tính đơn giản</title>
+</head>
+<body>
+<h2>Calculator</h2>
+<tr><input type="number" id="duLieu"></tr>
+<br>
+<tr>
+    <th><button type="number" onclick="soMot(A)">1</button></th>
+    <th><button type="number" onclick="soHai(B)">2</button></th>
+    <th><button type="number" onclick="soBa(C)">3</button></th>
+    <th><button type="button" onclick="phepcong()">+</button></th>
+</tr>
+<br>
+
+<tr>
+    <th><button type="number" onclick="soBon(D)">4</button></th>
+    <th><button type="number" onclick="soNam(E)">5</button></th>
+    <th><button type="number" onclick="soSau(F)">6</button></th>
+    <th><button type="button" onclick="pheptru()">-</button></th>
+
+</tr>
+<br>
+<tr>
+    <th><button type="number" onclick="soBay(G)">7</button></th>
+    <th><button type="number" onclick="soTam(H)">8</button></th>
+    <th><button type="number" onclick="soChin(J)">9</button></th>
+    <th><button type="button" onclick="phepnhan()">*</button></th>
+
+</tr>
+<br>
+<tr>
+    <th><button type="text" onclick="chuC(K)">C</button></th>
+    <th><button type="number" onclick="soKhong(L)">0</button></th>
+    <th><button type="number" onclick="dauBang()">=</button></th>
+    <th><button type="button" onclick="phepchia()">/</button></th>
+</tr>
+<script>
+    let A=1
+    function soMot() {
+         document.getElementById("duLieu").value +=1
+    }
+    let B=2
+    function soHai() {
+        document.getElementById("duLieu").value +=2
+    }
+    let C=3
+    function soBa() {
+        document.getElementById("duLieu").value +=3
+    }
+    let D=4
+    function soBon() {
+        document.getElementById("duLieu").value +=4
+    }
+    let E=5
+    function soNam() {
+        document.getElementById("duLieu").value +=5
+    }
+    let F=6
+    function soSau() {
+        document.getElementById("duLieu").value +=6
+    }
+    let G=7
+    function soBay() {
+        document.getElementById("duLieu").value +=7
+    }
+    let H=8
+    function soTam() {
+        document.getElementById("duLieu").value +=8
+    }
+    let J=9
+    function soChin() {
+        document.getElementById("duLieu").value +=9
+    }
+    let K=c
+    function chuC("") {
+        document.getElementById("duLieu").value +=c
+    }
+    let L=0
+    function soKhong() {
+        document.getElementById("duLieu").value +=0
+    }
+    function dauBang() {
+        document.getElementById("duLieu").value = eval(result);
+    }
+
+
+
+
+
+</script>
+
+</body>
+</html>

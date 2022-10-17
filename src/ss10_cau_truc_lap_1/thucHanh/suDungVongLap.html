@@ -2,9 +2,17 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Sự dụng vòng lặp For</title>
 </head>
 <body>
-$END$
+<h2>Vòng Lặp For</h2>
+<p id="demo"></p>
+<script>
+    var text = "";
+    for (i = 0; i<5; i++){
+        text += "the number is " + i + "<br>"
+    }
+    document.getElementById("demo").innerHTML = text;
+</script>
 </body>
 </html>

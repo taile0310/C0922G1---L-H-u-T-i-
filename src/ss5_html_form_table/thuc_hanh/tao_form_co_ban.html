@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tạo Form Cơ Bản</title>
 </head>
+<style>
+    .wufoo {
+        font-family: "Lucida Grand","Lucia Sans Unicode", Tahoma, sans-serif;
+    }
+</style>
 <body>
-$END$
+<form method="get " action="simpleform.html">
+<h2>Oder Form</h2>
+    <p>What would you like to buy?</p>
+    <select>
+        <option value = " ">A</option>
+        <option>B (+ 0.5$)</option>
+        <option>C (+ 0.5$)</option>
+    </select>
+      <p>How many would you like to oder?</p>
+    <input type="radio" name="ed"/> 1 - $10 <br/>
+    <input type="radio" name="ed"/> 2 - $20 <br/>
+    <input type="radio" name="ed"/> 3 - $25 <br/
+    >
+<p>Name <span style="color: #ff0000" >*</span"> </p>
+    <input type = "tesxt" name ="firstname" placeholder="FirstName" size="15"/>
+    <input type = "tesxt" name ="flastname" placeholder="LastName" size="15"/>
+    <p>Email</p>
+    <input type= "text" name= "email" size="35"/>
+    <p>Phone Number</p>
+    <input type=" text" name="phone1" size="5"/> -
+    <input type=" text" name="phone2" size="5"/> -
+    <input type=" text" name="phone3" size="5"/>
+    <p><input type= "button" name="btSubmit" value="Submit"/></p>
+
+</form>
+
 </body>
 </html>

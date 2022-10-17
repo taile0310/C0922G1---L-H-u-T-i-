@@ -2,9 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Thực hành tạo mảng</title>
 </head>
 <body>
-$END$
+<h1>Sample Screen</h1>
+<input type="text" id="nhapVao()">
+<button type="button" onclick="clickAdd()">Add</button>
+<button type="button" onclick="clickDisolay()">Display</button>
+<p>____________________________________</p>
+<p id="ketQua"></p>
+<script>
+    let a = 0;
+    let array = Array()
+    function clickAdd() {
+        array[a] = document.getElementById("nhapVao()").value;
+        alert("Element: " + array[a] + " Added at index " + a);
+        a++;
+        document.getElementById("nhapVao()").value = "";
+    }
+    function clickDisolay() {
+        let e = "<td>";
+        for (let i = 0; i < array.length; i++) {
+            e += "Element " + i + " = " + array[i] + "<br/>";
+        }
+        document.getElementById("ketQua").innerHTML = e;
+    }
+
+
+</script>
 </body>
 </html>
