@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Thay thế kí tự</title>
 </head>
 <body>
-$END$
+<script>
+    let a = prompt("nhapVao");
+    for (let i = 0; i < a.length; i++){
+        a=a.replace('-','_');
+    }
+    document.write(a);
+</script>
 </body>
 </html>

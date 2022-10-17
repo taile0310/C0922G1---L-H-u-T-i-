@@ -2,9 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Đếm số từ trong một chuỗi</title>
 </head>
 <body>
-$END$
+<script>
+    let a = prompt("nhapVao");
+    let dem=1;
+    if (a.length < 1){
+        document.write(0);
+    }else{
+        for (let i = 0; i < a.length; i++){
+            if (a[i]===" ")
+                dem++;
+        } document.write(dem);
+    }
+</script>
 </body>
 </html>
