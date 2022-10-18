@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm ngôi sao</title>
+</head>
+<body>
+<script>
+    let a= ["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let b= ["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+
+    function f() {
+        let c = prompt("nhapVaoChomSao");
+        for (let i = 0; i < a.length; i++){
+            if (a[i]==c){
+                document.write(b[i]);
+                break;
+            }
+        }
+    }
+    f();
+</script>
+</body>
+</html>
