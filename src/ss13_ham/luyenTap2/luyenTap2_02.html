@@ -2,9 +2,25 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tính chu vi và diện tích hình tròn</title>
 </head>
 <body>
-$END$
+<script>
+    let a = parseFloat(prompt("nhapVaoR"));
+    let b;
+    function chuVi(a) {
+        b =  2 * Math.PI * a;
+        return b;
+    }
+    chuVi(a);
+    document.write(b + "<br>");
+    let c;
+    function dienTich(a) {
+        c = Math.PI * Math.pow(a,2);
+        return c;
+    }
+    dienTich(a);
+    document.write(c);
+</script>
 </body>
 </html>
