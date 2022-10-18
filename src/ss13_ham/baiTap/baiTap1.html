@@ -2,9 +2,21 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tìm số nguyên tố</title>
 </head>
 <body>
-$END$
+<input type="number" id="soNT" placeholder="nhapVao"
+       oninput="soNguyenTo(this.value)"
+       onchange="soNguyenTo(this.value)">
+<p>Result: <span id="ketQua"></span></p>
+<script>
+    function soNguyenTo(a) {
+        if (a % 2 === 0) {
+            document.getElementById("ketQua").innerHTML = "Không là số NT"
+        } else {
+            document.getElementById("ketQua").innerHTML = " Là số NT"
+        }
+    }
+</script>
 </body>
 </html>

@@ -2,9 +2,28 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Chuyển đổi feet meters</title>
 </head>
 <body>
-$END$
+<script>
+
+    let meters = parseFloat(prompt("nhapVaoMeters"));
+
+    function feetToMeter(feet) {
+        feet = 3.279 * meters
+        document.writeln("0.035 meters = " + " " + feet + " feet" + "<br>")
+    }
+    feetToMeter()
+
+    let feet = parseFloat(prompt("nhapVaoFeet"));
+
+    function metersToFeet(meters) {
+        meters = 0.305 * feet
+        document.writeln("1.0 feet = " + " " + meters + " meters");
+
+    }
+
+    metersToFeet()
+</script>
 </body>
 </html>
