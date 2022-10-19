@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số ký tự</title>
+</head>
+<body>
+<script>
+    let a = prompt("nhapVaoKyTu");
+    let kyTu = "c";
+    let dem = 0;
+
+    function demkyTu() {
+        for (i = 0; i < a.length; i++) {
+            if (kyTu === a[i]) {
+                dem++;
+            }
+        }
+        if (dem === 0) {
+            return -1;
+            // return dem;
+        }
+        document.write(dem)
+    }
+    demkyTu()
+</script>
+</body>
+</html>
