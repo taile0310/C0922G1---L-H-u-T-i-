@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đổi chỗ số nguyên</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhapVaoSoThuNhat"));
+    let b = parseInt(prompt("nhapVaoSoThuHai"));
+    function doiCho(a,b) {
+        [a,b]=[b,a]
+        document.writeln("Vị trí sau khi thay đổi là: " + a + " và " + b);
+        // return a, b;
+    }
+    doiCho(a,b);
+    // let c;
+    // function tong(a,b) {
+    //     c = a+b;
+    //     document.write(c);
+    // }
+    // tong(a,b);
+</script>
+</body>
+</html>

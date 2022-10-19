@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính giai thừa số nguyên bất kì</title>
+</head>
+<body>
+<script>
+    let a = parseInt(prompt("nhapVaoSoNguyen"));
+    function giaiThua(a) {
+       if (a === 0){
+           return 1;
+       }else {
+           return a * giaiThua(a - 1);
+       }
+    }
+    document.write(giaiThua(a));
+    giaiThua(a);
+</script>
+</body>
+</html>

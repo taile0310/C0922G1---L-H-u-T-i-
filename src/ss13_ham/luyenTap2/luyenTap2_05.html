@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm số nguyên nhỏ nhất </title>
+</head>
+<body>
+<script>
+    let So = songuyen(prompt("nhap so thu 1 "),
+        prompt("nhap so thu 2"),
+        prompt("nhap so thu 3")
+    );
+    function songuyen(a,b,c) {
+        if(a < b && a < c){
+            alert(a)
+
+        }else if (b<a && b<c) {
+            alert(b)
+        }else {
+            alert(c)
+        }
+        alert ("Min la: " + So)
+    }
+</script>
+</body>
+</html>
