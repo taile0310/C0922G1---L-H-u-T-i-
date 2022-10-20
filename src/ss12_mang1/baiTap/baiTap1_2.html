@@ -9,7 +9,7 @@
     let A=['0','2','5','4','6','8'];
     let B=[A[0]];
     let C=A.length;
-    function chuoiB() {
+    function addDash() {
         for(let i=0;i<C-1;i++){
             if(A[i]%2===0&&A[i+1]%2===0){
                 B.push('-',A[i+1]);
@@ -21,9 +21,7 @@
             document.write(B[i]);
         }
     }
-    chuoiB();
-
-
+    addDash();
 </script>
 
 </body>
