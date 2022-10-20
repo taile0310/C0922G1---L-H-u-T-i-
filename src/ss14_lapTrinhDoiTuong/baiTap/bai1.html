@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình chữ nhật</title>
+</head>
+<body>
+<canvas id="canvasRectangle" width="60" height="30"></canvas>
+<br>
+<script>
+    class Rectangle {
+        constructor(widthRectangle, heigthRectangle, cRectangle, sRectangle) {
+            this.widthRectangle = widthRectangle;
+            this.heigthRectangle = heigthRectangle;
+            this.cRectangle = cRectangle;
+            this.sRectangle = sRectangle;
+        }
+        getWidth(){
+            return this.widthRectangle;
+        }
+        getHeigth(){
+            return this.heigthRectangle;
+        }
+        getcRectangle(){
+            return this.cRectangle;
+        }
+        getsRectangle(){
+            return this.sRectangle;
+        }
+        gets(){
+            return this.widthRectangle * this.heigthRectangle
+        }
+        getc(){
+            return (this.widthRectangle + this.heigthRectangle)*2
+        }
+    }
+
+    let rectangle = new Rectangle(50,25);
+    let widthRectangle = rectangle.widthRectangle;
+    let heigthRectangle = rectangle.heigthRectangle;
+    let c = rectangle.getc();
+    let s = rectangle.gets();
+    document.writeln("Diện tích hình chữ nhật là: " + s + "<br>" + "Chu vi hình chữ nhật là: " + c);
+
+    let recTangle = document.getElementById("canvasRectangle");
+    if (recTangle.getContext){
+        let canvas = recTangle.getContext('2d');
+        canvas.fillStyle = '#2afac9';
+        canvas.fillRect(10, 10, 50, 25);
+    }
+</script>
+</body>
+</html>

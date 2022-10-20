@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô tả Temperature</title>
+</head>
+<body>
+<script>
+    class Temperature {
+        constructor(A) {
+            this.A = A;
+        }
+
+        switchF() {
+            return this.A * 1.8 + 32;
+        }
+
+        switchK() {
+            return this.A + 273.15;
+        }
+    }
+
+    let A = parseFloat(prompt("nhapVaoNhietDo"));
+    let nhietDo = new Temperature(A);
+    if (A >= -273) {
+        document.write("Nhiệt độ F là: " + nhietDo.switchF() + "<br>");
+        document.write("Nhiệt độ K là: " + nhietDo.switchK());
+    } else {
+        document.write("Nhiệt độ bạn nhập không đúng");
+    }
+
+</script>
+</body>
+</html>
