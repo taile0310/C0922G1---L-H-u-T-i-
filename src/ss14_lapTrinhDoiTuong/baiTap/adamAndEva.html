@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mô tả câu chuyện Adam và Eva</title>
+</head>
+<body>
+<script>
+    class Apple {
+        constructor(weight) {
+            this.weight = weight
+        }
+        isEmpty(){
+            if (this.weight <=0){
+                return true;
+            }else {
+                return false;
+            }
+        }
+        decrese(){
+            this.weight--;
+        }
+    }
+    class Human {
+        constructor(name, weight) {
+            this.name = name;
+            // this.sex = sex;
+            this.weight = weight;
+        }
+        checkApple(apple){
+            if (apple.isEmpty()){
+                console.log("Ăn hết táo rồi. Đi mua đi");
+            }else {
+                console.log("Táo còn ăn được");
+            }
+        }
+
+        eat(apple){
+            if (apple.isEmpty()){
+                document.write("Nhịn")
+            }else {
+                console.log(this.name + " đang ăn");
+                this.weight++;
+                apple.decrese();
+            }
+        }
+    }
+    let apple = new Apple(20);
+    let adam = new Human("Adam", 70);
+    let eva = new Human("Eva", 55);
+    adam.checkApple(apple);
+    eva.eat(apple);
+    console.log(apple.weight);
+    console.log(eva.weight);
+
+</script>
+</body>
+</html>

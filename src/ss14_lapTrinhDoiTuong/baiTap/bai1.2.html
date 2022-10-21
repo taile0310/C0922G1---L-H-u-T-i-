@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình vuông</title>
+</head>
+<body>
+<canvas id="drawSquare" height="200" width="200"></canvas>
+<br>
+</body>
+<script>
+    class Square {
+        constructor(a, color, x, y) {
+            this.a = a;
+            this.color = color;
+            this.x = x;
+            this.y = y;
+        }
+
+        geta() {
+            return this.a
+        }
+        getS() {
+            return this.a * this.a;
+        }
+        draw() {
+            let ctx = document.getElementById("drawSquare").getContext('2d');
+            ctx.beginPath();
+            ctx.rect(20, 20, 100, 100)
+            ctx.fillStyle = this.color;
+            ctx. fill();
+
+        }
+    }
+    let square = new Square(100, "red", 20, 20)
+    let s = square.getS();
+    document.write("Diện tích hình vuông là: " + s);
+    square.draw();
+</script>
+</html>

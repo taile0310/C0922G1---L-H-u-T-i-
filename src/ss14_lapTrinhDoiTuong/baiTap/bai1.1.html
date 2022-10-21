@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vẽ hình tròn</title>
+</head>
+<body>
+<canvas id="drawCircle" height="300" width="300"></canvas>
+<br>
+<script>
+    class Circle {
+        constructor(R, color, x, y) {
+            this.R = R;
+            this.color = color;
+            this.x = x;
+            this.y = y;
+        }
+        getR(){
+            return this.R
+        }
+        getS(){
+            return Math.PI * this.R * this.R;
+        }
+        draw(){
+            let ctx = document.getElementById("drawCircle").getContext('2d');
+            ctx.beginPath()
+            ctx.arc(this.x, this.y, this.R, 0, 2 * Math.PI);
+            ctx.fillStyle = this.color;
+            ctx.fill();
+        }
+
+    }
+    let circle = new Circle(100, "grey", 100, 100);
+    let s = circle.getS();
+    document.write("Diện tích hình tròn là: " + s);
+    circle.draw();
+</script>
+</body>
+</html>
