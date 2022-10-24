@@ -27,10 +27,10 @@
         getsRectangle(){
             return this.sRectangle;
         }
-        gets(){
+        getS(){
             return this.widthRectangle * this.heigthRectangle
         }
-        getc(){
+        getC(){
             return (this.widthRectangle + this.heigthRectangle)*2
         }
     }
@@ -38,9 +38,9 @@
     let rectangle = new Rectangle(50,25);
     let widthRectangle = rectangle.widthRectangle;
     let heigthRectangle = rectangle.heigthRectangle;
-    let c = rectangle.getc();
-    let s = rectangle.gets();
-    document.writeln("Diện tích hình chữ nhật là: " + s + "<br>" + "Chu vi hình chữ nhật là: " + c);
+    let C = rectangle.getC();
+    let S = rectangle.getS();
+    document.writeln("Diện tích hình chữ nhật là: " + S + "<br>" + "Chu vi hình chữ nhật là: " + C);
 
     let recTangle = document.getElementById("canvasRectangle");
     if (recTangle.getContext){
