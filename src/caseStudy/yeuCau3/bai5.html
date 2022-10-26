@@ -60,21 +60,20 @@
     let arrNuoc = ["nuocCam","caPhe", "nuocOi", "nuocCoc", "suaDau", "nuocDua"];
     let arrGia = [20000,20000,20000,20000,20000,20000];
     let hoaDon = "";
-    let i = 0;
-    function order(maNuoc) {
-        // do{
+    do {
+        function order(maNuoc) {
             let soLuong = document.getElementById(arrNuoc[maNuoc]).value;
             let thanhTien = soLuong * arrGia[maNuoc];
-            hoaDon = "thanh tien cua " + soLuong + " " + arrNuoc[maNuoc] + " la " + thanhTien ;
-            hoaDon += i + "<br>";
-            i++;
-            hienThiHoaDon();
-        // } while (i<6)
+            hoaDon = "Tổng tiền là " + thanhTien + " " + arrNuoc[maNuoc] + " " + soLuong;
 
-    }
-    function hienThiHoaDon() {
+            hienThiHoaDon();
+        }
+        function hienThiHoaDon() {
             document.getElementById("ketQua").innerText = hoaDon;
-    }
+
+        }
+    }while (i<7)
+
 </script>
 </body>
 </html>
