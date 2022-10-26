@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm chỉ số lớn nhất</title>
+</head>
+<body>
+<script>
+    let arr1 = [5,2,5];
+    let arr2 = [6.,3,4];
+    let index = 0;
+    function chiSoMax(){
+        for(let i = 0; i < arr1.length; i++){
+            if(arr1[index]*arr2[i] < arr1[i]*arr2[index]){
+                index = i;
+            }
+        } document.write(index);
+      return index;
+    }
+    chiSoMax();
+</script>
+</body>
+</html>
+<!--XONG-->

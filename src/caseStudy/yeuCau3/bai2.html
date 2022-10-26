@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm phần tử mảng </title>
+</head>
+<body>
+<script>
+    let arrA = [7,2,1,3,6,9];
+    let arrB = [7,2,1,8,0,3,6,9];
+    let arrC = [];
+    function timPhanTu() {
+        for (i = 0; i < arrA.length; i++){
+            if (arrB.indexOf(arrA[i]) === -1){
+                arrC.push(arrA[i]);
+            }
+        }
+        for (i = 0; i < arrB.length; i++){
+            if (arrA.indexOf(arrB[i]) === -1){
+                arrC.push(arrB[i]);
+            }
+        }document.write(arrC);
+        return arrC;
+    }
+    timPhanTu()
+</script>
+</body>
+</html>
+<!--XONG-->
