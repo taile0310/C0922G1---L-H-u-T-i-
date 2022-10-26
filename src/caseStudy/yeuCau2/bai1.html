@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tính thuế thu nhập và lương ròng</title>
+</head>
+<body>
+<script>
+let tienLuong = parseFloat(prompt("nhapVaoSoTienLuong"));
+let thueThuNhap ;
+function tienSauThue() {
+    if (tienLuong >= 15000000){
+        thueThuNhap = tienLuong * ( 20/100);
+        // document.write(thueThuNhap);
+    } else if (tienLuong > 7000000){
+        thueThuNhap = tienLuong * ( 10/100);
+        // document.write(thueThuNhap);
+    } else {
+        thueThuNhap = tienLuong * ( 5/100);
+        // document.write(thueThuNhap);
+    }
+    document.write(thueThuNhap)
+}
+tienSauThue();
+</script>
+</body>
+</html>
+<!--XONG-->
