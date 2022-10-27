@@ -2,9 +2,26 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tính tổng các số chẵn trong ma trận</title>
 </head>
 <body>
-$END$
+<script>
+    let arr = [];
+    let m = parseInt(prompt("Nhập vào độ dài m: "));
+    let n = parseInt(prompt("Nhập vào độ dài n: "));
+    let sum = 0;
+    for (let i = 0; i < m ; i++){
+        arr[i]= [];
+        for (let j = 0; j < n ; j++) {
+            // khai báo mảng hai chiều
+            arr[i][j]= parseInt(prompt("nhapVaoPhanTu"));
+            if (arr[i][j]%2===0){
+                sum += arr[i][j];
+            }
+        }
+    }
+    document.write(sum)
+</script>
 </body>
 </html>
+<!--XONG-->

@@ -2,9 +2,39 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Tìm giá trị lớn nhất và nhỏ nhất</title>
 </head>
 <body>
-$END$
+<script>
+    function findMaxMin(a) {
+        let max = 0;
+        let min = a[0][0];
+        for (let i = 0; i < a.length; i++) {
+            for (let j = 0; j < a[i].length; j++) {
+                if (a[i][j] > max) {
+                    max=a[i][j]
+                }
+                if (a[i][j] < min) {
+                    min=a[i][j]
+                }
+            }
+        }
+        document.write("Số lớn nhất là: " + max + "<br>");
+        document.write("Số nhỏ nhất là: " + min );
+    }
+
+    let arr = [];
+    let m = parseInt(prompt("Nhập vào số dòng mảng n: "));
+    let n = parseInt(prompt("Nhập vào số cột mảng m: "));
+    for (let i = 0; i < m; i++) {
+        arr[i] = [];
+        for (let j = 0; j < n; j++) {
+             let a= parseInt(prompt("Nhập vào phần tử của mảng: "));
+            arr[i].push(a)
+        }
+    }
+    findMaxMin(arr);
+</script>
 </body>
 </html>
+<!--XONG-->

@@ -2,9 +2,53 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Đêm số nguyên tố có trong mảng</title>
 </head>
 <body>
-$END$
+<script>
+
+    function nguyenTo(a) {
+        let test = true;
+        if (a <= 1) test = false
+        else {
+            for (let i = 2; i <= Math.sqrt(a); i++) {
+                if (a % i === 0) {
+                    test = false;
+                    break;
+                }
+            }
+        }
+        return test;
+
+    }
+
+    function mangNguyenTo(b) {
+        let a = [];
+        for (let i = 0; i < b.length; i++) {
+            for (let j = 0; j < b[i].length; j++) {
+                if (nguyenTo(b[i][j]) == true) {
+                    a.push(b[i][j]);
+                }
+            }
+        }
+        return a;
+    }
+
+    let arr = [];
+    let m = parseInt(prompt("Nhâp vào số dòng cửa mảng: "));
+    let n = parseInt(prompt("Nhập vào số cột của mảng: "));
+
+    for (let i = 0; i < m; i++) {
+        arr[i] = []
+        for (let j = 0; j < n; j++) {
+            arr[i][j] = parseInt(prompt("Nhập vào phần tử cần kiểm tra"));
+        }
+    }
+    let b = mangNguyenTo(arr);
+    document.write('có ' + b.length + ' nguyên tố trong mảng:' + b + '<br>');
+
+
+</script>
 </body>
 </html>
+<!--XONG-->
