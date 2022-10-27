@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tìm kí tự chung giữa hai sâu</title>
+</head>
+<body>
+<script>
+    let xau1 = "aabcc";
+    let xau2 = "adcaa";
+    // let xauKiTu = xau1 + xau2;
+    let dem = 0;
+    for (let i = 0; i < xau1.length; i++){
+        for (let j = 0; j < xau2,length; j++){
+            if (xau1[i] === xau2[j]){
+                dem++;
+            }
+        }
+    }
+    document.write(dem)
+    // arr = xauKiTu.split("")
+    // for (let i = 0; i < xauKiTu.length; i++ ){
+    //     strArr = arr[i].split("");
+    //     for ( let j = 0; j < strArr.length; j++){
+    //         if (arr[j] === xauKiTu[i]){
+    //             dem++;
+    //         }
+    //     }
+    // }
+    // document.write(dem)
+</script>
+
+</body>
+</html>

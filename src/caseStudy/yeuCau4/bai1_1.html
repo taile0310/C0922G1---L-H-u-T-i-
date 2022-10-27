@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chuyển đổi chữ thường thành chữ hoa</title>
+</head>
+<body>
+<script>
+    let str = "tRuong TaN Hai";
+    let arr = str. split(" ");
+    let temp = "";
+    for (let i = 0; i < arr.length; i++){
+        let strArr = arr[i].split("");
+        for (j = 0; j < strArr.length; j++) {
+            if (j === 0) {
+                strArr[j] = strArr[j].toUpperCase()
+            } else {
+                strArr[j] = strArr[j].toLowerCase()
+            }
+        }
+        temp = strArr.join("");
+        document.writeln(temp);
+    }
+
+</script>
+</body>
+</html>

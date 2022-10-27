@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Đếm số kí tự khác nhau </title>
+</head>
+<body>
+<script>
+    let xauKiTu = "cabcade";
+    let dem = 0;
+    arr = xauKiTu.split("");
+    for (let i = 0; i < xauKiTu.length; i++) {
+        strArr = arr[i].split("");
+        for (let j = 0; j < strArr.length; j++){
+            if (arr[j] !== xauKiTu[i]){
+                dem++;
+            }
+        }
+    }
+    document.write(dem)
+</script>
+</body>
+</html>
+<!--XONG-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--    -->
+<!--    -->
+<!--    -->
+<!--    // let str = prompt("Nhập chuỗi cần kiểm tra: ")-->
+<!--    // let count = 0;-->
+<!--    // let result = [];-->
+<!--    // let str1 = str.split('')-->
+<!--    // differentSymbolsNaive(str1)-->
+<!--    // function differentSymbolsNaive(str1) {-->
+<!--    //     for(let i=0; i<str1.length;i++){-->
+<!--    //         for (let j=0; j<str1.length; j++){-->
+<!--    //             if(i!=j) {-->
+<!--    //                 if (str1[i] != str1[j] && check(str1[i]) != true)-->
+<!--    //                 {-->
+<!--    //                     result.push(str1[i])-->
+<!--    //                     result.sort()-->
+<!--    //                     count++;-->
+<!--    //                 }-->
+<!--    //             }-->
+<!--    //-->
+<!--    //         }-->
+<!--    //     }-->
+<!--    //     alert("Chuỗi trên gồm "+count+ " ký tự khác nhau là: "+result)-->
+<!--    // }-->
+<!--    // function check(a){-->
+<!--    //-->
+<!--    //     for(let k=0; k<result.length;k++){-->
+<!--    //         if(result[k]==a){-->
+<!--    //             return true;-->
+<!--    //         }-->
+<!--    //     }-->
+<!--    //-->
+<!--    // }-->

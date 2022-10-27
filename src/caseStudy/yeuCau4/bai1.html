@@ -2,9 +2,24 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>$Title$</title>
+    <title>Chuyển đổi chữ thường thành hoa</title>
 </head>
 <body>
-$END$
+<script>
+    let str = "tai le";
+    let arr = str.split(" ");
+    let temp = "";
+    for (let i = 0; i < arr.length; i++) {
+        let strArr = arr[i].split("");
+        for (let j = 0; j < strArr.length; j++) {
+            if(j == 0) {
+                strArr[0] = strArr[0].toUpperCase();
+            }
+        }
+        temp = strArr.join("");
+        document.writeln(temp);
+    }
+</script>
 </body>
 </html>
+<!--XONG-->
