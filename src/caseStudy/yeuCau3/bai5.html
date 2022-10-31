@@ -53,10 +53,12 @@
         <td><h4>20.000</h4></td>
         <td><input id="nuocDua" type="number"></td>
         <td><button type="button" onclick="order(5)">Chọn</button></td>
+        <td><button type="button" onclick="order(6)">Thoat</button></td>
     </tr>
 </table>
 <p id="ketQua"></p>
 <script>
+   let  sum=''
     let arrNuoc = ["nuocCam","caPhe", "nuocOi", "nuocCoc", "suaDau", "nuocDua"];
     let arrGia = [20000,20000,20000,20000,20000,20000];
     let hoaDon = "";
@@ -64,16 +66,16 @@
         function order(maNuoc) {
             let soLuong = document.getElementById(arrNuoc[maNuoc]).value;
             let thanhTien = soLuong * arrGia[maNuoc];
-            hoaDon = "Tổng tiền là " + thanhTien + " " + arrNuoc[maNuoc] + " " + soLuong;
-
+            hoaDon = "Tổng tiền là " + thanhTien + " " + arrNuoc[maNuoc] + " " + soLuong ;
+            sum += hoaDon
             hienThiHoaDon();
         }
         function hienThiHoaDon() {
-            document.getElementById("ketQua").innerText = hoaDon;
+            document.getElementById("ketQua").innerHTML = hoaDon +'<br>';
 
         }
-    }while (i<7)
-
+    }while (maNuoc<6)
+document.write(sum)
 </script>
 </body>
 </html>

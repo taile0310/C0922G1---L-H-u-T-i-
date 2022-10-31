@@ -6,17 +6,22 @@
 </head>
 <body>
 <script>
-    let a =[1,2,3];
-    let b =[];
-    function arrB() {
-        for (i = 0; i <= a.length; i++){
-            b[0] = a[0];
-            b[1] = a[0] + a[1];
-            b[2] = a[0] + a[1] + a[2];
+
+    let n = parseInt(prompt("nhập vào lần lặp"));
+    let arr1 = [];
+    let arr2 = [];
+    for (let i = 0; i < n; i++) {
+            arr1[i] = parseInt(prompt("nhập vào phần tử của mảng" + i));
         }
-        document.write(b);
+    document.write("Mảng vừa tạo là" + arr1 + "<br>");
+    for (let i = 0; i < arr1.length; i++) {
+        arr2[0] = arr1[0];
+        // công thức tính prefix sums
+        arr2[i] = arr2[i-1] + arr1[i];
+
     }
-    arrB()
+    document.write("Mảng sau khi tính prefix sum là: " + arr2);
+
 </script>
 </body>
 </html>
