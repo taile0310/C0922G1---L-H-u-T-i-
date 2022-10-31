@@ -6,29 +6,24 @@
 </head>
 <body>
 <script>
-    let xau1 = "aabcc";
-    let xau2 = "adcaa";
-    // let xauKiTu = xau1 + xau2;
+    let xau1 = "abbscd";
+    let xau2 = "addscb";
     let dem = 0;
-    for (let i = 0; i < xau1.length; i++){
-        for (let j = 0; j < xau2,length; j++){
-            if (xau1[i] === xau2[j]){
-                dem++;
+    arr1 = xau1.split("");
+    arr2 = xau2.split("");
+    function demKiTu(str1,str2) {
+        for (let i = 0; i < arr1.length ; i++) {
+            for (let j = 0; j < arr2.length ; j++) {
+                if (arr1[i] === arr2[j]) {
+                    dem++;
+                    arr2.splice(j,1);
+                    break;
+                }
             }
         }
+        return dem;
     }
-    document.write(dem)
-    // arr = xauKiTu.split("")
-    // for (let i = 0; i < xauKiTu.length; i++ ){
-    //     strArr = arr[i].split("");
-    //     for ( let j = 0; j < strArr.length; j++){
-    //         if (arr[j] === xauKiTu[i]){
-    //             dem++;
-    //         }
-    //     }
-    // }
-    // document.write(dem)
+    document.write(demKiTu(xau1,xau2));
 </script>
-
 </body>
 </html>
