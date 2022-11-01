@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>kiểm tra đối xứng trong mảng một chiều</title>
+</head>
+<body>
+<script>
+    let arr = prompt("Nhập vào phần tử của mảng");
+    let kiemTra = doiXung(arr);
+
+    function daoNguoc(arr) {
+        arr = arr.toString()
+        return arr.split("").reverse().join("");
+    }
+    // tìm số đảo ngược để tạo Hàm kiểm tra số đối xứng trong
+    function doiXung(arr) {
+        // flag = 1 => số đối xứng
+        // flag = 0 => không phải số đối xứng
+        let flag = 0;
+        if (daoNguoc(arr) === arr) {
+            flag = 1;
+            return flag;
+        }
+    }
+    if (kiemTra === 1) {
+        document.writeln(arr + " là mảng đối xứng");
+    } else {
+        document.writeln(arr + " không phải là mảng đối xứng");
+    }
+</script>
+</body>
+</html>

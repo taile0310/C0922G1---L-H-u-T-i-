@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tách đôi mảng số nguyên thành hai mảng </title>
+</head>
+<body>
+<script>
+    let arr = [1,2,3,4,5,6,7,8,9,10];
+    let arr1 = [];
+    let arr2 = [];
+    for (let i = 0; i < arr.length/2; i++) {
+       arr1.push(arr[i]);
+    }
+    document.writeln(arr1 + "<br>");
+
+    for (let i = arr.length - 1; i >= arr.length/2 ; i--) {
+        arr2.push(arr[i]);
+    }
+    document.writeln(arr2);
+</script>
+</body>
+</html>

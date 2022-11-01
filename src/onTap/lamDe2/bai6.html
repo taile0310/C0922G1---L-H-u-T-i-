@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>In ra màn hinh số lẻ và số chẵn đã nhập</title>
+</head>
+<body>
+<script>
+    let dem = 0;
+    let arr1 = [];
+    let arr2 = [];
+    let arr = [];
+    function kiemTraNhap() {
+        let n = parseInt(prompt("Nhập vào độ dài của mảng"));
+        if ( n <= 0) {
+            return kiemTraNhap();
+        }
+
+        for (let i = 0; i < n; i++) {
+            arr[i] = prompt("nhập vào phần tử số nguyên");
+        }
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                dem++;
+                arr1.push(arr[i]);
+            }
+        }
+        document.writeln("Mảng số chẵn sau khi tách là: " + arr1 + "<br>");
+
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 !==0) {
+                dem++;
+                arr2.push(arr[i]);
+            }
+        }
+        document.writeln("Mảng số lẻ sau khi tách là: " + arr2);
+    }
+    kiemTraNhap();
+</script>
+</body>
+</html>

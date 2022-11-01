@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tách số lẻ và chẵn ra hai mảng riêng biêt</title>
+</head>
+<body>
+<script>
+    let arr = [1,2,3,4,5,6,7,8,9,10];
+    let dem = 0;
+    let arr1 = [];
+    let arr2 = [];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 === 0) {
+            dem++;
+            arr1.push(arr[i]);
+        }
+    }
+    document.writeln("Mảng số chẵn sau khi tách là: " + arr1 + "<br>");
+
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] % 2 !==0) {
+            dem++;
+            arr2.push(arr[i]);
+        }
+    }
+    document.writeln("Mảng số lẻ sau khi tách là: " + arr2);
+</script>
+</body>
+</html>
